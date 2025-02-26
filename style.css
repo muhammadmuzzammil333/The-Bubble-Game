@@ -1,0 +1,271 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(3, 111, 61);
+    color: #ffffff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    height: auto;
+    margin: 0;
+}
+
+
+
+
+
+/* <!-----------------------------Start Hit Timer Score Box--------------------------  --> */
+
+#main-div {
+    width: 100%;
+}
+
+.hit-timer-score-box {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 70%;
+    background-color: rgb(18, 63, 18);
+    height: 80px;
+    margin-left: 200px;
+    padding-right: 10px;
+    border-radius: 10px 10px 0px 0px;
+    padding-left: 10px;
+}
+
+.hit,
+.timer,
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(18, 63, 18);
+}
+
+.hit-value,
+.timer-value,
+.score-value {
+    background-color: white;
+    color: black;
+    width: 40px;
+    height: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.hit p,
+.timer p,
+.score p {
+    font-size: 20px;
+    background-color: rgb(18, 63, 18);
+}
+
+
+
+/* <!-----------------------------End Hit Timer Score Box--------------------------  --> */
+/* <!-----------------------------Start Random Bubbles Box--------------------------  --> */
+#random-bubbles-container {
+    /* padding-left: 10px; */
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 70%;
+    background-color: white;
+    height: 480px;
+    margin-left: 200px;
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+}
+
+.bubble {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 63, 18);
+    border-radius: 50px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.bubble:hover {
+    background-color: rgb(13, 206, 13);
+
+}
+
+/* <!-----------------------------End Random Bubbles Box--------------------------  --> */
+
+
+/* <!-----------------------------Start Time Over Box--------------------------  --> */
+
+.time-over {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.time-over h1 {
+    background-color: green;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+}
+
+/* <!-----------------------------End Time Over Box--------------------------  --> */
+
+/* <!-----------------------------Start Media Query --------------------------  --> */
+
+@media only screen and (max-width : 1116px) {
+    .hit-timer-score-box {
+        margin-left: 100px;
+        width: 80%;
+    }
+
+    #random-bubbles-container {
+        margin-left: 100px;
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width : 1000px) {
+
+    .hit-timer-score-box {
+        margin-left: 80px;
+    }
+
+    #random-bubbles-container {
+        margin-left: 80px;
+    }
+
+}
+
+@media only screen and (max-width : 800px) {
+
+    .hit-timer-score-box {
+        margin-left: 60px;
+    }
+
+    #random-bubbles-container {
+        margin-left: 60px;
+    }
+
+}
+
+@media only screen and (max-width : 650px) {
+
+    .hit-timer-score-box {
+        margin-left: 40px;
+    }
+
+    #random-bubbles-container {
+        margin-left: 40px;
+    }
+
+}
+
+@media only screen and (max-width : 610px) {
+    .hit-timer-score-box {
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width : 580px){
+    .time-over h1 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    .hit-timer-score-box {
+        margin-left: 30px;
+        gap: 40px;
+    }
+
+    #random-bubbles-container {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+
+    .hit-value,
+    .timer-value,
+    .score-value {
+        width: 30px;
+        height: 25px;
+    }
+
+    .hit p,
+    .timer p,
+    .score p {
+        font-size: 17px;
+    }
+
+    .hit-timer-score-box {
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width : 410px){
+    .time-over h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width : 370px) {
+    .hit-timer-score-box {
+        margin-left: 20px;
+        gap: 25px;
+    }
+
+    #random-bubbles-container {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .hit-value,
+    .timer-value,
+    .score-value {
+        width: 27px;
+        height: 23px;
+    }
+
+    .hit p,
+    .timer p,
+    .score p {
+        font-size: 15px;
+    }
+
+    .hit-timer-score-box {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width : 335px){
+    .time-over h1 {
+        font-size: 18px;
+    }
+}
+
+
+/* <!-----------------------------End Media Query --------------------------  --> */
